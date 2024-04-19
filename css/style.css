@@ -46,9 +46,6 @@ a {
 i {
   color: inherit;
 }
-ul li {
-  /* list-style: none; */
-}
 img {
   width: 100%;
   display: block;
@@ -425,7 +422,6 @@ img {
           img {
             width: 50%;
           }
-        a{
         }
       }
       .info {
@@ -441,6 +437,33 @@ img {
       .info {
         h3 {
           width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .parent {
+    grid-template-areas:
+      "box3"
+      "box1"
+      "box2"
+      "box4"
+      "box8"
+      "box5"
+      "box6"
+      "box10"
+      "box9"
+      "box7"
+      "box11"
+      "box12";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    .box10 {
+      .info {
+        width: 60%;
+        h3 {
+          width: 70%;
         }
       }
     }
